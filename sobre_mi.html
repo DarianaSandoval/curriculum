@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sobre mí - Dariana Sandoval Martinez</title>
+    <link rel="stylesheet" href="CSS/Normalize.css" />
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <style>
+      .grid-dos-columnas {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+      }
+      @media (max-width: 900px) {
+        .grid-dos-columnas {
+          grid-template-columns: 1fr;
+        }
+      }
+      .seccion-primario {
+        background: var(--grisClaro);
+        border-radius: 1rem;
+        padding: 2rem;
+        box-shadow: 0 2px 8px rgba(248, 187, 208, 0.2);
+      }
+    </style>
+    <style>
+      html {
+        font-size: 62.5%; 
+        box-sizing: border-box; 
+        scroll-snap-type: none !important; 
+      }
+      .servicios,
+      .navegacion-principal,
+      .formulario {
+        scroll-snap-align: none !important;
+        scroll-snap-stop: none !important;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 class="titulo">ISC. Dariana Sandoval Martinez</h1>
+      <div class="nav-bg">
+        <nav class="navegacion-principal contenedor">
+          <a href="index.html">Inicio</a>
+          <a href="sobre_mi.html">Sobre mí</a>
+          <a href="contacto.html">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="contenedor sombra">
+      <section
+        class="perfil"
+        style="
+          display: flex;
+          align-items: center;
+          gap: 2rem;
+          margin-bottom: 2rem;
+          justify-content: center;
+        "
+      >
+        <div class="foto-perfil">
+          <img
+            src="img/foto_perfil.jpg"
+            alt="Foto de Dariana Sandoval Martinez"
+            width="180"
+            style="border-radius: 50%; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1)"
+          />
+        </div>
+        <div class="datos-personales">
+          <h2 style="margin-bottom: 0.5rem">
+            <!-- Icono usuario -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="28"
+              height="28"
+              fill="none"
+              stroke="#ec407a"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              style="vertical-align: middle; margin-right: 8px"
+            >
+              <circle cx="14" cy="10" r="6" />
+              <path d="M4 24c0-4 8-6 10-6s10 2 10 6" />
+            </svg>
+            Dariana Sandoval Martinez
+          </h2>
+          <p>
+            <strong>Profesión:</strong> Ingeniera en Sistemas Computacionales
+          </p>
+          <p><strong>Ubicación:</strong> Aguascalientes, Ags.</p>
+          <p><strong>Correo:</strong> dasama2604@gmail.com</p>
+          <p><strong>Teléfono:</strong> 449-123-4567</p>
+        </div>
+      </section>
+
+      <div class="grid-dos-columnas">
+        <section class="descripcion seccion-primario">
+          <h2>
+            <!-- Icono perfil profesional -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              stroke="#ec407a"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              style="vertical-align: middle; margin-right: 8px"
+            >
+              <path
+                d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4z"
+              />
+              <path d="M6 20v-2c0-2.21 3.58-4 6-4s6 1.79 6 4v2" />
+            </svg>
+            Perfil Profesional
+          </h2>
+          <p>
+            Ingeniera en Sistemas Computacionales con experiencia en desarrollo
+            web, aplicaciones y soluciones tecnológicas. Apasionada por el
+            aprendizaje continuo, la innovación y el trabajo en equipo.
+          </p>
+        </section>
+
+        <section class="habilidades servicio seccion-primario">
+          <h2>
+            <!-- Icono habilidades -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              stroke="#ec407a"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              style="vertical-align: middle; margin-right: 8px"
+            >
+              <path d="M12 2v20M2 12h20" />
+            </svg>
+            Habilidades
+          </h2>
+          <ul>
+            <li>Desarrollo web (HTML, CSS, JavaScript)</li>
+            <li>Programación en Python y Java</li>
+            <li>Gestión de bases de datos (MySQL, SQL Server)</li>
+            <li>Trabajo en equipo y liderazgo</li>
+            <li>Resolución de problemas</li>
+            <li>Comunicación efectiva</li>
+          </ul>
+        </section>
+
+        <section class="certificaciones servicio seccion-primario">
+          <h2>
+            <!-- Icono certificaciones -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              stroke="#ec407a"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              style="vertical-align: middle; margin-right: 8px"
+            >
+              <path d="M12 2l3 7h7l-5.5 4.5L17 21l-5-3.5L7 21l1.5-7.5L3 9h7z" />
+            </svg>
+            Certificaciones
+          </h2>
+          <ul>
+            <li>Certificado en redes</li>
+            <li>Scrum Fundamentals Certified (SFC)</li>
+            <li>Certificado en base de datos</li>
+          </ul>
+        </section>
+
+        <section class="educacion servicio seccion-primario">
+          <h2>
+            <!-- Icono educación -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              stroke="#ec407a"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              style="vertical-align: middle; margin-right: 8px"
+            >
+              <path d="M22 12l-10-7-10 7 10 7 10-7z" />
+              <path d="M2 12v7a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-7" />
+            </svg>
+            Educación
+          </h2>
+          <ul>
+            <li>
+              Ingeniería en Sistemas Computacionales - Universidad Politécnica
+              de Aguascalientes
+            </li>
+          </ul>
+        </section>
+
+        <section class="idiomas servicio seccion-primario">
+          <h2>
+            <!-- Icono idiomas -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              stroke="#ec407a"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              style="vertical-align: middle; margin-right: 8px"
+            >
+              <circle cx="12" cy="12" r="10" />
+              <path
+                d="M2 12h20M12 2a15.3 15.3 0 0 1 0 20M12 2a15.3 15.3 0 0 0 0 20"
+              />
+            </svg>
+            Idiomas
+          </h2>
+          <ul>
+            <li>Español (Nativo)</li>
+            <li>Inglés (Intermedio)</li>
+          </ul>
+        </section>
+
+        <section class="experiencia seccion-primario" style="margin-top: 2rem">
+          <h2>
+            <!-- Icono experiencia -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              stroke="#ec407a"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              style="vertical-align: middle; margin-right: 8px"
+            >
+              <rect x="2" y="7" width="20" height="14" rx="2" />
+              <path d="M16 3v4M8 3v4" />
+            </svg>
+            Experiencia
+          </h2>
+          <ul>
+            <li>Desarrolladora web freelance (2023 - Actualidad)</li>
+            <li>Prácticas profesionales en empresa de tecnología local</li>
+          </ul>
+        </section>
+
+        <section
+          id="contacto"
+          class="seccion-primario"
+          style="
+            margin-top: 2rem;
+            grid-column: 1 / -1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          "
+        >
+          <h2>
+            <!-- Icono contacto -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              stroke="#ec407a"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              style="vertical-align: middle; margin-right: 8px"
+            >
+              <path
+                d="M21 10.5V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-4.5"
+              />
+              <path d="M16 3.5L12 7.5 8 3.5" />
+            </svg>
+            Contacto
+          </h2>
+          <p>Puedes contactarme por correo o teléfono para más información.</p>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>Todos los derechos reservados ISC.Dariana Sandoval Martinez</p>
+    </footer>
+  </body>
+</html>
